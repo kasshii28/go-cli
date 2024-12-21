@@ -12,11 +12,11 @@ import (
 )
 
 // prokenCmd represents the proken command
-var prokenCmd = &cobra.Command{
-	Use:   "proken",
+var oecuCmd = &cobra.Command{
+	Use:   "oecu",
 	Short: "Print the ascii art of cat",
 	Run: func(cmd *cobra.Command, args []string) {
-		file, err := aa.AaPrkn.Open("proken.txt")
+		file, err := aa.AaOecu.Open("oecu.txt")
 		if err != nil {
 			fmt.Println(err)
 		}
@@ -30,5 +30,5 @@ var prokenCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(prokenCmd)
+	rootCmd.AddCommand(oecuCmd)
 }
