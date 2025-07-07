@@ -27,7 +27,7 @@ func init() {
 func selectText() {
 	text := promptui.Select{
 		Label: "What do you want to print Text?",
-		Items: []string{"Oecu", "Logo", "Gakutyou"},
+		Items: []string{"Oecu", "Logo", "Gakutyou", "proken"},
 		CursorPos: 0,
 	}
 
@@ -47,5 +47,7 @@ func selectText() {
 			utils.PrintAaFromText("logo.txt")
 		case "Gakutyou":
 			utils.PrintAaFromText("gakutyou.txt")
+		case "proken":
+			utils.PrintAaFromText("proken.txt")
 	}
 }
